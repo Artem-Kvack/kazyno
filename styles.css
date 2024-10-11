@@ -1,0 +1,97 @@
+
+/* Общие стили */
+body {
+    background-color: #2e2e2e; /* Темный фон */
+    color: #ffffff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    text-align: center; /* Центрирование текста */
+    margin: 0; /* Убираем стандартные отступы */
+    padding: 0; /* Убираем стандартные отступы */
+}
+
+/* Информация о ставках */
+.text-info {
+    position: absolute;
+    top: 20px; /* Расстояние от верхнего края */
+    left: 20px; /* Расстояние от левого края */
+    font-size: 20px; /* Размер шрифта */
+    color: #ffcc00; /* Цвет текста */
+}
+
+/* Контейнер */
+.container {
+    margin-top: 50px; /* Отступ сверху */
+}
+
+/* Кнопки */
+button {
+    background-color: #ffcc00; /* Цвет кнопки */
+    border: none; /* Без границ */
+    border-radius: 5px; /* Закругленные углы */
+    margin: 10px; /* Отступы между кнопками */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель для курсора */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+button:hover {
+    background-color: #ffd700; /* Цвет кнопки при наведении */
+}
+
+/* Слот-машина */
+.slot-machine {
+    display: flex;
+    justify-content: center; /* Центрирование слотов */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+/* Слот */
+.reel {
+    width: 50px; /* Ширина слота */
+    height: 100px; /* Высота слота */
+    font-size: 40px; /* Размер шрифта для символов */
+    margin: 0 10px; /* Отступы между слотами */
+    background-color: #444; /* Цвет фона слота */
+    border: 2px solid #ffcc00; /* Граница слота */
+    border-radius: 5px; /* Закругленные углы */
+    display: flex; /* Flexbox для центрирования текста */
+    align-items: center; /* Вертикальное центрирование */
+    justify-content: center; /* Горизонтальное центрирование */
+}
+
+/* Результат */
+.result {
+    margin-top: 20px; /* Отступ сверху для результата */
+    font-size: 20px; /* Размер шрифта для результата */
+    color: #ffcc00; /* Цвет текста результата */
+}
+
+/* Эффекты для побед */
+.result-win {
+    animation: bounce 1s; /* Анимация при выигрыше */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Начальная позиция */
+    }
+    40% {
+        transform: translateY(-20px); /* Подъем вверх */
+    }
+    60% {
+        transform: translateY(-10px); /* Полу-подъем */
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    animation: spin 1s ease-in-out; /* Применяем анимацию вращения */
+}
