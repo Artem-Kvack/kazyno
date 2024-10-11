@@ -72,7 +72,7 @@ function checkWin(reels) {
     // Проверка выигрыша только при совпадении трех символов
     if (results[0] === results[1] && results[1] === results[2]) {
         resultDisplay.textContent = "Вы выиграли!";
-        balance += 100000; 
+        balance += 200000; 
         launchConfetti();
     } else {
         resultDisplay.textContent = "Попробуйте снова!";
