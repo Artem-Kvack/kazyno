@@ -10,26 +10,37 @@
 
 <body>
     <div class="container">
+        <!-- Информация о поинтах -->
         <div class="text-info" id="textInfo">10000 points = 5 zł</div>
+
         <h1>Слот Машина</h1>
+
+        <!-- Отображение баланса, долгов и спинов -->
         <div class="balance" id="balance">Баланс: 5000</div>
         <div class="spins" id="spins">Спины: 0</div>
-
-
         <div class="debt" id="debt">Долг: 0</div>
+
+        <!-- Слот машина -->
         <div class="slot-machine">
             <div class="reel" id="reel1"></div>
             <div class="reel" id="reel2"></div>
             <div class="reel" id="reel3"></div>
         </div>
+
+        <!-- Кнопки управления -->
         <button id="spinButton">Покрутить!</button>
         <button id="loanButton">Взять в долг 2000</button>
         <button id="repayButton">Вернуть долг</button>
         <button id="buySpinsButton">Купить 10 спинов за 1000 поинтов</button>
 
+        <!-- Сообщение о джекпоте -->
 
+
+        <!-- Отображение результата -->
         <div class="result" id="result"></div>
     </div>
+
+    <!-- Подключение библиотеки для конфетти -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
 </body>
